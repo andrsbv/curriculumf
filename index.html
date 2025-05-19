@@ -27,16 +27,18 @@
 </header>
 
 
-  <nav>
-    <ul>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#form">Form</a></li>
-      <li><a href="#map">Map</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#references">References</a></li> <!-- NUEVO -->
+    <li><a href="#form">Form</a></li>
+    <li><a href="#map">Map</a></li>
+  </ul>
+</nav>
+
 
   <main>
     <section id="profile">
@@ -85,42 +87,115 @@
       </div>
     </section>
 
-<section id="form">
-  <h2>Contact Form</h2>
-  <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <section id="references">
+      <h2>Professional References</h2>
+      
+      <!-- Testimonios -->
+      <article class="reference">
+        <blockquote>"Andrés consistently demonstrated a strong understanding of network concepts and a remarkable commitment to learning."</blockquote>
+        <p><span class="bold">Ing. Carla Mendoza</span><br>
+        Professor of Networks, ESPOL<br>
+        Email: <a href="mailto:carla.mendoza@espol.edu.ec">carla.mendoza@espol.edu.ec</a><br>
+        She guided Andrés in CCNA training and highlights his ability to troubleshoot and document complex networking scenarios.</p>
+      </article>
+      
+      <article class="reference">
+        <blockquote>"His approach to software architecture and attention to design patterns was beyond what I usually see in undergraduates."</blockquote>
+        <p><span class="bold">Ing. Luis Torres</span><br>
+        Software Engineer, Telefónica Ecuador<br>
+        Email: <a href="mailto:ltorres@telefonica.com.ec">ltorres@telefonica.com.ec</a><br>
+        He supervised Andrés during a project simulation, where Andrés contributed to an internal tool using Java and Git.</p>
+      </article>
+      
+      <article class="reference">
+        <blockquote>"Andrés brings a rare combination of logic and creativity, especially in algorithm design and teamwork."</blockquote>
+        <p><span class="bold">Ing. Andrea Vélez</span><br>
+        Research Assistant, ESPOL AI Lab<br>
+        Email: <a href="mailto:andrea.velez@espol.edu.ec">andrea.velez@espol.edu.ec</a><br>
+        She worked with Andrés in a university research initiative involving AI-based educational platforms.</p>
+      </article>
+      
+      <!-- Tabla resumen -->
+      <h3>Reference Summary</h3>
+      <table class="reference-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Institution</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ing. Carla Mendoza</td>
+            <td>Professor of Networks</td>
+            <td>ESPOL</td>
+            <td><a href="mailto:carla.mendoza@espol.edu.ec">carla.mendoza@espol.edu.ec</a></td>
+          </tr>
+          <tr>
+            <td>Ing. Luis Torres</td>
+            <td>Software Engineer</td>
+            <td>Telefónica Ecuador</td>
+            <td><a href="mailto:ltorres@telefonica.com.ec">ltorres@telefonica.com.ec</a></td>
+          </tr>
+          <tr>
+            <td>Ing. Andrea Vélez</td>
+            <td>Research Assistant</td>
+            <td>ESPOL AI Lab</td>
+            <td><a href="mailto:andrea.velez@espol.edu.ec">andrea.velez@espol.edu.ec</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    
+    
+    
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <section id="video">
+      <h2>Learning Cybersecurity</h2>
+      <p>As part of my continuous learning in cybersecurity, I've been exploring ethical hacking and software security. Check out this introductory video:</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6nauquu3CY" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
 
-    <label for="subject">Subject:</label>
-    <select id="subject" name="subject" required>
-      <option value="">-- Select a subject --</option>
-      <option value="internship">Internship Opportunity</option>
-      <option value="project">Project Collaboration</option>
-      <option value="question">General Question</option>
-    </select>
+    <section id="form">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label>How did you find me?</label>
-    <div class="radio-group">
-      <label><input type="radio" name="source" value="GitHub" required> GitHub</label>
-      <label><input type="radio" name="source" value="LinkedIn"> LinkedIn</label>
-      <label><input type="radio" name="source" value="Referral"> Referral</label>
-    </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="">-- Select a subject --</option>
+          <option value="internship">Internship Opportunity</option>
+          <option value="project">Project Collaboration</option>
+          <option value="question">General Question</option>
+        </select>
 
-    <button type="submit">Send</button>
-  </form>
-</section>
+        <label>How did you find me?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="source" value="GitHub" required> GitHub</label>
+          <label><input type="radio" name="source" value="LinkedIn"> LinkedIn</label>
+          <label><input type="radio" name="source" value="Referral"> Referral</label>
+        </div>
 
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-    <section id="map">
+  <section id="map">
       <h2>My Location</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9061247993462!2d-79.89657663050324!3d-2.1454402723048445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d181dbb28d1%3A0xa656bba946bf8e9f!2sESPOL!5e0!3m2!1ses-419!2sec!4v1715699182000!5m2!1ses-419!2sec"
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63792.24264597484!2d-80.0366671783203!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1747664912966!5m2!1ses-419!2sec"
         width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
