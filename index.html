@@ -10,14 +10,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+<header>
+  <div class="header-container">
+    <img src="images/perfil.jpg" alt="Andrés Bohórquez" id="photo">
+    
     <div class="name-block">
       <h1>Andrés Bohórquez</h1>
       <h2>Computer Science Student – ESPOL</h2>
       <p>Guayaquil, Ecuador</p>
-      <p><a href="mailto:andres.bohorquez.villao23@gmail.com">andres.bohorquez.villao23@gmail.com</a> | <a href="tel:+593968675686">+593 96 867 5686</a></p>
+      <p>
+        <a href="mailto:andres.bohorquez.villao23@gmail.com">andres.bohorquez.villao23@gmail.com</a> |
+        <a href="tel:+593968675686">+593 96 867 5686</a>
+      </p>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <nav>
     <ul>
@@ -56,7 +64,6 @@
         <li>Collaborated with Git and GitHub under agile methodologies.</li>
       </ul>
     </section>
-
     <section class="two-columns">
       <div>
         <h2>Skills</h2>
@@ -78,21 +85,38 @@
       </div>
     </section>
 
-    <section id="form">
-      <h2>Contact Form</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+<section id="form">
+  <h2>Contact Form</h2>
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject" required>
+      <option value="">-- Select a subject --</option>
+      <option value="internship">Internship Opportunity</option>
+      <option value="project">Project Collaboration</option>
+      <option value="question">General Question</option>
+    </select>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
+    <label>How did you find me?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="source" value="GitHub" required> GitHub</label>
+      <label><input type="radio" name="source" value="LinkedIn"> LinkedIn</label>
+      <label><input type="radio" name="source" value="Referral"> Referral</label>
+    </div>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
 
     <section id="map">
       <h2>My Location</h2>
